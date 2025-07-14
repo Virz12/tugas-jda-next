@@ -20,7 +20,7 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="/games/Terraria" className="hover:text-gray-300">
+          <Link href="/games" className="hover:text-gray-300">
             See what game i play
           </Link>
         </li>
