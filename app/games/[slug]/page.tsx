@@ -1,3 +1,5 @@
+import { Game } from "@/lib/data";
+
 interface GamePageProps {
   params: Promise<{
     slug: string
