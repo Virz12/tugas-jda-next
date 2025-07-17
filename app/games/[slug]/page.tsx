@@ -1,4 +1,5 @@
-import { Game } from "@/lib/data";
+import { getGames } from "@/lib/actions";
+import { Game } from "@/lib/type";
 
 interface GamePageProps {
   params: Promise<{
@@ -7,8 +8,7 @@ interface GamePageProps {
 }
 
 export default async function GamePage(props: GamePageProps) {
-  const res = await fetch('http://localhost:3000/api/games');
-  const games = await res.json();
+  const games = await getGames()
 
   const params = await props.params;
   const { slug } = params
